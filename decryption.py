@@ -65,7 +65,7 @@ def search(dirname):
                                 fileWriteError = False
                             except:
                                 fileWriteError = True
-														# 파일을 여는 과정에서 에러가 발생하지 않았다면 복호화 진행
+			    # 파일을 여는 과정에서 에러가 발생하지 않았다면 복호화 진행
                             if not (fileReadError or fileWriteError):
                                 # 복호화 진행 #
                                 ciphertext = data
@@ -75,7 +75,7 @@ def search(dirname):
                                 k = 0  # tag의 범위를 구하기 위한 임시변수
                                 rawCiphertext = []
                                 k2 = 1  # 'tag:' 문자열을 필터링하기 위한 임시변수 (암호문을 구하기 위함)
-																# k : tag값을 구하기 위한 변수, k2 : 암호문을 구하기 위한 변수
+				# k : tag값을 구하기 위한 변수, k2 : 암호문을 구하기 위한 변수
 
                                 # tag값을 구하는 for문 #
                                 try:
