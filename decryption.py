@@ -25,7 +25,7 @@ def decryptAES(ciphertext, tag):
 # 파일을 검색하고, 전체적인 프로그램 흐름을 실행하는 함수 #
 def search(dirname):
 
-		# path에 지정된 경로내의 모든 파일을 탐색하는 for문
+    # path에 지정된 경로내의 모든 파일을 탐색하는 for문
     for (path, dir, files) in os.walk(dirname):
             for filename in files:
 
